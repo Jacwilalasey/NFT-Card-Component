@@ -1,0 +1,99 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: hsl(217, 54%, 11%);
+}
+
+.container-main {
+    display: block;
+    justify-content: center;
+    width: auto;
+    padding: 2em;
+    max-width: 80rem;
+    background-color:  hsl(216, 50%, 16%);
+    border-radius: 0.9375rem;
+}
+
+.nft {
+    height: auto;
+    width: auto;
+    max-width: 21.875rem;
+    max-height: 21.875rem;
+    border-radius: 0.625rem;
+}
+
+.nft:hover {
+    height: auto;
+    width: auto;
+    max-width: 21.875rem;
+    max-height: 21.875rem;
+    border-radius: 0.625rem;
+    background-color: hsla(178, 100%, 50%, .5);
+}
+
+h3 {
+    color: hsl(0, 0%, 100%);
+    font-family: "Outfit";
+    font-weight: 600;
+}
+
+h3:hover {
+    color: hsl(178, 100%, 50%);
+    font-family: "Outfit";
+    font-weight: 600;
+}
+
+.description {
+    color: hsl(215, 51%, 70%);
+    font-family: "Outfit";
+    font-size: 400;
+    max-width: 21.875rem;
+}
+
+.detail {
+    display: inline-flex;
+}
+
+.price {
+    color: hsl(178, 100%, 50%);
+    font-family: "Outfit";
+    font-size: 400;
+}
+
+.time {
+    color: hsl(215, 51%, 70%);
+    font-family: "Outfit";
+    font-size: 400;
+}
+
+.maker {
+    display: inline-flex;
+}
+
+.avatar {
+    height: auto;
+    width: auto;
+    max-width: 3rem;
+    max-height: 3rem;
+    border-radius: 50%;
+    border: solid white 1px;
+}
+
+.creator {
+    font-family: "Outfit";
+    font-size: 300;
+    color: hsl(215, 51%, 70%);
+    margin-left: 1rem;
+    letter-spacing: .07rem;
+}
+
+.name {
+    color: white;
+}
+
+.name:hover {
+    color: hsl(178, 100%, 50%);
+}
