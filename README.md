@@ -13,7 +13,7 @@
 ### The challenge
 
 - Create the basic HTML framework for an NFT product card component 
-- Use CSS to style the page to match the design spec
+- Use CSS to style the page to match the design spec and make responsive
 
 ## My process
 
@@ -24,24 +24,42 @@
 
 ### What I learned
 
-This challenge was a step up from the QR code challenge in terms of being able to figure out flex box and how to get the corrent alignment, sizing and content within a respose set of 3 product cards. I had some minor issues around figuring out how to set a border-radius around only 4 of the edges, as it always set the border-radius across each each of the 3 product cards. 
-
-Also, some issues around the responsiveness, I was able to set the site to be responsive to mobiles, but in this process (when sizing down) I found that the content in each product card would spill, also the button for the third card would not be visible. I was able to rectify the button issue, but still researching the spill issue. 
+Another great challenge, I found my skills had improved when building out the card component and it's separate elements, but began to need assistance when I was trying to figure out some of the hover effects and also making sure the component was responsive when used on a phone. I was able to better utilise relative sizing rather than relying on pixels, I also found my understanding of positioning on a page has greatly improved, especially when using flex capabilities. 
 
 
-CSS in mention
+CSS Hover issue
 ```css
-@media screen and (max-width:1440px){
-    .container-sub{
-        width: 30%;
-    }
+.nft {
+    height: auto;
+    width: auto;
+    max-width: 21.875rem;
+    max-height: 21.875rem;
+    border-radius: 0.625rem;
 }
 
+.nft:after {
+    position:absolute;
+    width:100%; height:100%;
+    top:0; left:0;
+    background:hsl(178, 100%, 50%, .5);
+    opacity:0;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+}
+.nft:hover:after {
+    opacity:1;
+}
 
-@media screen and (max-width:800px){
-    .container-sub{
-        width: 90%;
-    }
+h3 {
+    color: hsl(0, 0%, 100%);
+    font-family: "Outfit";
+    font-weight: 600;
+}
+
+h3:hover {
+    color: hsl(178, 100%, 50%);
+    font-family: "Outfit";
+    font-weight: 600;
 }
 ```
 
